@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método de Newton</title>
+    <link rel="stylesheet" href="diseño.css">
+</head>
+<body>
+
+    <header>
+        <h1>Método de Newton</h1>
+    </header>
+
+    <main>
+        <article>
+            <h2>Introducción al Método de Newton</h2>
+            <p>El Método de Newton, también conocido como método de Newton-Raphson, es un algoritmo iterativo utilizado para encontrar aproximaciones de los ceros o raíces de una función real. Este método es particularmente eficaz cuando se busca una solución para ecuaciones no lineales.</p>
+
+            <p>La fórmula iterativa del Método de Newton se expresa como:</p>
+            <pre>
+                x_{n+1} = x_n - f(x_n) / f'(x_n)
+            </pre>
+
+            <p>Donde:
+                <ul>
+                    <li>x_{n+1} es la siguiente aproximación de la raíz.</li>
+                    <li>x_n es la aproximación actual de la raíz.</li>
+                    <li>f(x_n) es el valor de la función en x_n.</li>
+                    <li>f'(x_n) es la derivada de la función en x_n.</li>
+                </ul>
+            </p>
+            
+            <img width=500 height=300 src="descarga.png"align="left">
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t1ERTSnXWo4?si=SXyTIk1ZYgEj4h8S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <article>
+                <h2>Método de Newton</h2>
+                <p id="article-content">.</p>
+                <a onclick="addMoreContent()">Leer más</a>
+            </article>
+        </main>
+    
+        <script>
+            function addMoreContent() {
+                var additionalText = "Se repiten los pasos 2 y 3 hasta que se alcance la precisión deseada o un número máximo de iteraciones. La convergencia del Método de Newton puede variar dependiendo de la elección de la aproximación inicial y las propiedades de la función. En algunos casos, el método puede converger rápidamente hacia la raíz, mientras que en otros casos puede divergir o converger lentamente La elección de la aproximación inicial es crucial. Puede conducir a diferentes soluciones dependiendo de la raíz a la que se converge. La función debe ser diferenciable en la vecindad de la raíz. La convergencia puede no estar garantizada en todos los casos, y el método puede fallar en puntos donde la derivada es cercana a cero .";
+                var articleContent = document.getElementById('article-content');
+                articleContent.innerHTML += "<br>" + additionalText;
+            }
+        </script>
+        </article>
+    </main>
+</body>
+</html>

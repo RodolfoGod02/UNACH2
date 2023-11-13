@@ -1,0 +1,53 @@
+ body {
+ font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: burlywood;
+color: #333;
+}
+
+header {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 1em;
+}
+
+h1 {
+margin-top: 0;
+  }
+
+main {
+max-width: 800px;
+margin: 20px auto;
+background-color: #fff;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+article {
+margin-bottom: 20px;
+border-bottom: 1px solid #ddd;
+padding-bottom: 20px;
+}
+
+article img {
+max-width: 100%;
+height: auto;
+margin: 10px auto;
+display: block;
+}
+
+article a {
+display: block;
+margin-top: 10px;
+color: #333;
+text-decoration: none;
+cursor: pointer;
+    }
+    img {
+        max-width: 20%; /* La imagen no será más ancha que su contenedor */
+        height: auto;    /* La altura se ajusta automáticamente para mantener la proporción */
+        margin-top: 50px; /* Espaciado superior */
+        display: block;   /* Elimina el espacio adicional debajo de la imagen */
+    }
